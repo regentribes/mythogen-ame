@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Lock files (use pnpm or bun for better dependency management)
+# package-lock.json
+# yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test coverage
+coverage/
+
+# Temp files
+tmp/
+temp/
+*.tmp
+
+# Secrets
+*.pem
+*.key
+credentials.json
+*.credentials

@@ -1,9 +1,18 @@
 {
   "name": "mythogen-ame",
   "version": "0.1.0",
-  "description": "Mythogen Affinity Mapping Engine & Field of Trust system",
+  "description": "Mythogen Affinity Mapping Engine & Field of Trust system - A regenerative framework for community design",
   "type": "module",
   "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./models": "./dist/models/types.js",
+    "./engine": "./dist/engine/index.js",
+    "./anticapture": "./dist/anticapture/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
