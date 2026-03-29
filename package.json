@@ -1,0 +1,32 @@
+{
+  "name": "mythogen-ame",
+  "version": "0.1.0",
+  "description": "Mythogen Affinity Mapping Engine & Field of Trust system",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:init": "psql -f src/db/schema.sql"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "pg": "^8.13.0",
+    "uuid": "^10.0.0",
+    "ws": "^8.18.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.0.0",
+    "@types/pg": "^8.11.0",
+    "@types/uuid": "^10.0.0",
+    "@types/ws": "^8.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
